@@ -95,12 +95,12 @@
        font-size: 14px;
        text-align: left;
        font-weight: light;
-     }
-     .partners-grid{
+     }     
+     .partners-grid {
        display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       gap: 20px;
-       text-align: center;
+       grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+       grid-template-rows: repeat(2, auto); /* 2 rows with automatic height */
+       gap: 20px; /* Space between grid items */
        margin-top: 20px;
      }
      .partners-grid img {
@@ -109,6 +109,9 @@
        height: auto;
        display: block;
        margin: 0 auto 10px;
+     }
+     .partners-grid div {
+       text-align: center;
      }
      footer {
        display: flex;
@@ -139,7 +142,7 @@
       </div>
       
       <div class="menu">
-        <a href="./index.html#about">О НАС</a>
+        <a href="./index.html">О НАС</a>
         <a href="./index.html#services">УСЛУГИ</a>
         <a href="./index.html#partners">ПАРТНЕРЫ</a>
         <a href="./blog.html">БЛОГ</a>
@@ -215,26 +218,47 @@
       <h3 style="font-weight: 700; text-align: left;">ПАРТНЕРЫ</h3>
       <div class="partners-grid">
         <div>
-          <img src="images/partners-1.jpg">
+          <img src="images/partners-1.jpg" alt="Partner 1">
           <p>
             Школа "Умный садовник"<br>Дмитрия Звонка
           </p>
         </div>
         <div>
-          <img src="images/partners-2.jpg">
+          <img src="images/partners-2.jpg" alt="Partner 2">
           <p>
             Школа "Бонсай и Ниваки"<br>Андрея Дарусенкова
           </p>
         </div>
         <div>
-          <img src="images/partners-3.jpg">
+          <img src="images/partners-3.jpg" alt="Partner 3">
           <p>
             Академия Ландшафтного бизнеса<br>Анастаса Позидиса
           </p>
         </div>
+        <div>
+          <img src="images/partners-4.jpeg" alt="Partner 4">
+          <p>
+            Владимир Никитин <br> Профессиональный дендролог, лесовод, <br>
+            специалист по лесовосстановлению
+          </p>
+        </div>
+        <div>
+          <img src="images/partners-5.jpeg" alt="Partner 5">
+          <p>
+            Компания <br>"Попилка"<br>
+          </p>
+        </div>
+        <div>
+          <img src="images/partners-6.jpeg" alt="Partner 6">
+          <p>
+            Компания "Братья Лесорубы"<br>Шкуренко Игорь и Гавриил 
+          </p>
+        </div>
+      </div>
     </section>
-    <hr style="margin-top: 20px; border: 1px solid #ccc;">
+    <br>
 
+    
     <footer>
       &copy; 2024 Наталия Земцова
       <div class="social-links">
